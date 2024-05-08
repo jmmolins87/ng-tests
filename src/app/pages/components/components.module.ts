@@ -15,6 +15,10 @@ import { GreetingComponent } from './components/greeting/greeting.component';
   imports: [
     CommonModule,
     ComponentsRoutingModule
+  ],
+  exports: [
+    PlaygroundComponentsComponent
   ]
+
 })
 export class ComponentsModule { }
