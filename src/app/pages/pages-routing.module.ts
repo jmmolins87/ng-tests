@@ -17,6 +17,7 @@ const routes: Routes = [
   {
     path: 'components',
     component: PlaygroundComponentsComponent,
+    loadChildren: () => import('./components/components.module').then( m => m.ComponentsModule )
   },
   {
     path: 'directives',

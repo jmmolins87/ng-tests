@@ -11,6 +11,6 @@ export class SharedService {
 
 
   get itemsNavbar() {
-    return itemsNavbar
+    return itemsNavbar;
   }
 }
