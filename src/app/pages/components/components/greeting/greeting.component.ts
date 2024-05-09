@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class GreetingComponent {
 
+  public message: string = 'Hello, World!';
+
+  constructor() { 
+
+    setTimeout(() => {
+      this.message = 'Hello, Angular!';
+    }, 2000)
+  }
+
 }

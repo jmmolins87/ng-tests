@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 // * Components
+import { HomeComponent } from '../shared/components/home/home.component';
 import { PlaygroundComponentsComponent } from './components/playground-components.component';
 import { PlaygroundDirectivesComponent } from './directives/playground-directives.component';
 import { PlaygroundRoutingComponent } from './routing/playground-routing.component';

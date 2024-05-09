@@ -15,5 +15,9 @@ export const itemsTabs: ItemsTabs[] = [
     {
         name: 'Son One',
         path: 'sonOne'
+    },
+    {
+        name: 'Son Two',
+        path: 'sonTwo'
     }
 ]

@@ -7,6 +7,7 @@ import { PlaygroundComponentsComponent } from './playground-components.component
 import { GreetingComponent } from './components/greeting/greeting.component';
 import { FatherComponent } from './components/father/father.component';
 import { SonOneComponent } from './components/son-one/son-one.component';
+import { SonTwoComponent } from './components/son-two/son-two.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { SonOneComponent } from './components/son-one/son-one.component';
     PlaygroundComponentsComponent,
     GreetingComponent,
     FatherComponent,
-    SonOneComponent
+    SonOneComponent,
+    SonTwoComponent
   ],
   imports: [
     CommonModule,
