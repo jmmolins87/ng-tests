@@ -1,0 +1,36 @@
+
+
+
+<div>
+    <button 
+        (click)="onClick($event)" 
+        class="btn btn-outline-success">
+        Click me!
+    </button>
+</div>
+
+<div>
+    <select (change)="onChange($event)" class="form-select mt-3">
+        <option value="uno">Uno</option>
+        <option value="dos">Dos</option>
+        <option value="tres">Tres</option>
+    </select>
+</div>
+
+<div 
+    (mouseover)="onMouseOver()" 
+    (mouseleave)="onMouseLeave()"
+    class="square mt-3">
+    <span class="square-text">{{ message }}</span>
+</div>
+
+<div class="mt-3">
+    <input 
+        (change)="onChangeInput($event)" 
+        (input)="onInput($event)"
+        (focus)="onFocus()"
+        (blur)="onBlur()"
+        type="text" 
+        class="form-control"
+        placeholder="Escriba algo">
+</div>

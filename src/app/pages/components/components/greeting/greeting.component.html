@@ -3,3 +3,12 @@
 <h1>{{ message }}</h1>
 <h2>Subtítulo</h2>
 <p>{{ message }}</p>
+<p>El método devuelve: {{ showGreeting() }}</p>
+<p id="pre-{{ idParagraph }}-sub">Párrafo para modificar atributos</p>
+<p [id]="idParagraph">Otro párrafo</p>
+<input 
+    [type]="idInput" 
+    [placeholder]="placeholderInput" 
+    class="mb-4">
+
+<app-alert [message]="messageOtherAlert" />

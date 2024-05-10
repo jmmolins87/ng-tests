@@ -8,6 +8,12 @@ import { GreetingComponent } from './components/greeting/greeting.component';
 import { FatherComponent } from './components/father/father.component';
 import { SonOneComponent } from './components/son-one/son-one.component';
 import { SonTwoComponent } from './components/son-two/son-two.component';
+import { EventsComponent } from './components/events/events.component';
+import { AddTaskComponent } from './tasks/add-task/add-task.component';
+import { ChronometerTaskComponent } from './tasks/chronometer-task/chronometer-task.component';
+import { CalculatorTaskComponent } from './tasks/calculator-task/calculator-task.component';
+import { AlertComponent } from './components/alert/alert.component';
+import { AddWithInputComponent } from './tasks/add-with-input/add-with-input.component';
 
 
 @NgModule({
@@ -16,7 +22,14 @@ import { SonTwoComponent } from './components/son-two/son-two.component';
     GreetingComponent,
     FatherComponent,
     SonOneComponent,
-    SonTwoComponent
+    SonTwoComponent,
+    EventsComponent,
+    AddTaskComponent,
+    ChronometerTaskComponent,
+    CalculatorTaskComponent,
+    AlertComponent,
+    AddWithInputComponent,
+    AddTaskComponent
   ],
   imports: [
     CommonModule,

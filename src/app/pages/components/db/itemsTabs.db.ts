@@ -19,5 +19,29 @@ export const itemsTabs: ItemsTabs[] = [
     {
         name: 'Son Two',
         path: 'sonTwo'
+    },
+    {
+        name: 'Events',
+        path: 'events'
+    },
+    {
+        name: 'Add task',
+        path: 'addTask'
+    },
+    {
+        name: 'Chronometer',
+        path: 'chronometerTask'
+    },
+    {
+        name: 'Calculator',
+        path: 'calculatorTask'
+    },
+    {
+        name: 'Alert',
+        path: 'alert'
+    },
+    {
+        name: 'Add task with Input',
+        path: 'addTaskWithInput'
     }
 ]

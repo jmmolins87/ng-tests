@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class SonTwoComponent {
 
+  public messageOtherAlert: string = 'Esta es la alerta del componente alert en el componente hijo dos';
+
 }
