@@ -1,0 +1,8 @@
+<nav class="nav flex-column">
+    <a 
+        *ngFor="let item of itemsTabs" 
+        [routerLink]="[item.path]"
+        class="nav-link active" >
+        {{ item.name }}
+    </a>
+</nav>

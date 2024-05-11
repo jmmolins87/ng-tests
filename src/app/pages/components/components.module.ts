@@ -14,6 +14,7 @@ import { ChronometerTaskComponent } from './tasks/chronometer-task/chronometer-t
 import { CalculatorTaskComponent } from './tasks/calculator-task/calculator-task.component';
 import { AlertComponent } from './components/alert/alert.component';
 import { AddWithInputComponent } from './tasks/add-with-input/add-with-input.component';
+import { ConfigTabsModule } from '../config-tabs/config-tabs.module';
 
 
 @NgModule({
@@ -28,12 +29,12 @@ import { AddWithInputComponent } from './tasks/add-with-input/add-with-input.com
     ChronometerTaskComponent,
     CalculatorTaskComponent,
     AlertComponent,
-    AddWithInputComponent,
-    AddTaskComponent
+    AddWithInputComponent
   ],
   imports: [
     CommonModule,
-    ComponentsRoutingModule
+    ComponentsRoutingModule,
+    ConfigTabsModule
   ],
   exports: [
     PlaygroundComponentsComponent
