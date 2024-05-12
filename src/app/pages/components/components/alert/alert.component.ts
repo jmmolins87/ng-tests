@@ -1,4 +1,9 @@
-import { Component, Input } from '@angular/core';
+import { 
+  Component, 
+  EventEmitter, 
+  Input, 
+  Output 
+} from '@angular/core';
 
 @Component({
   selector: 'app-alert',
@@ -9,5 +14,12 @@ export class AlertComponent {
 
   @Input()
   public message: string = 'Mensaje de la alerta por defecto';
+
+  @Output()
+  public alertClicked: EventEmitter<string> = new EventEmitter();
+
+  onClick() {
+    this.alertClicked.emit();
+  }
 
 }

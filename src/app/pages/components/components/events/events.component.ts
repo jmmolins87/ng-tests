@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class EventsComponent {
 
   public message!: string;
+  public movies: string[] = ['Superman', 'Batman', 'Ironman', 'Capitan América'];
 
   onClick($event: any) {
     console.log('Se ha pulsado el botón');
