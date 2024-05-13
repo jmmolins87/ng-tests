@@ -4,7 +4,6 @@ import { CommonModule } from '@angular/common';
 import { PagesRoutingModule } from './pages-routing.module';
 
 import { ComponentsModule } from './components/components.module';
-import { ConfigTabsModule } from './config-tabs/config-tabs.module';
 
 @NgModule({
   declarations: [],
@@ -12,7 +11,6 @@ import { ConfigTabsModule } from './config-tabs/config-tabs.module';
     CommonModule,
     PagesRoutingModule,
     ComponentsModule,
-    ConfigTabsModule
   ]
 })
 export class PagesModule { }

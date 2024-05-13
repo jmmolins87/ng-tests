@@ -1,9 +1,11 @@
 
 
-import { ItemsTabs } from "../interface/tabsItems.interface";
 
 
-export const itemsTabs: ItemsTabs[] = [
+import { ItemsTabs } from "../../../shared/interfaces/tabsItems.interface";
+
+
+export const itemsTabsComponents: ItemsTabs[] = [
     {
         name: 'Greeting',
         path: 'greeting'

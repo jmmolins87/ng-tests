@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
 
-import { ComponentsService } from '../config-tabs/services/components.service';
+import { PagesService } from '../pages.service';
 
-import { ItemsTabs } from '../config-tabs/interface/tabsItems.interface';
+import { ItemsTabs } from './../../shared/interfaces/tabsItems.interface';
+
 
 @Component({
   selector: 'app-playground-components',
@@ -13,7 +14,7 @@ export class PlaygroundComponentsComponent {
 
   public itemsTabsComponents: ItemsTabs[];
 
-  constructor( private _componentsService: ComponentsService ) {
-    this.itemsTabsComponents = this._componentsService.itemsTabs;
+  constructor( private _componentsService: PagesService ) {
+    this.itemsTabsComponents = this._componentsService.itemsTabsComponents;
   }
 }

@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
 import { ComponentsRoutingModule } from './components-routing.module';
+import { SharedModule } from './../../shared/shared.module';
 
 import { PlaygroundComponentsComponent } from './playground-components.component';
 import { GreetingComponent } from './components/greeting/greeting.component';
@@ -15,7 +16,6 @@ import { ChronometerTaskComponent } from './tasks/chronometer-task/chronometer-t
 import { CalculatorTaskComponent } from './tasks/calculator-task/calculator-task.component';
 import { AlertComponent } from './components/alert/alert.component';
 import { AddWithInputComponent } from './tasks/add-with-input/add-with-input.component';
-import { ConfigTabsModule } from '../config-tabs/config-tabs.module';
 import { ChronometerOutputTaskComponent } from './tasks/chronometer-output-task/chronometer-output-task.component';
 import { TwoWayBindingComponent } from './components/two-way-binding/two-way-binding.component';
 import { ToDoSimpleComponent } from './tasks/to-do-simple/to-do-simple.component';
@@ -42,7 +42,7 @@ import { ToDoSimpleComponent } from './tasks/to-do-simple/to-do-simple.component
     CommonModule,
     FormsModule,
     ComponentsRoutingModule,
-    ConfigTabsModule,
+    SharedModule
   ],
   exports: [
     PlaygroundComponentsComponent
