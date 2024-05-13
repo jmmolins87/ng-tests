@@ -1,0 +1,21 @@
+
+
+
+
+<div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Lista de tareas</h5>
+        <ul *ngIf="tasks.length > 0" class="list-group mt-3">
+            <li *ngFor="let task of tasks" class="list-group">
+                <span class="list-title">{{ task.title }}</span>
+                <span class="list-description">{{ task.description }}</span>
+            </li>
+        </ul>
+        <div 
+            *ngIf="tasks.length <= 0" 
+            class="alert alert-danger mt-3" 
+            role="alert">
+            <span>No hay tareas que mostrar</span>
+        </div>
+    </div>
+</div>

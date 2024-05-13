@@ -55,7 +55,7 @@ export const itemsTabsComponents: ItemsTabs[] = [
         path: 'twoWayBinding'
     },
     {
-        name: 'To Do Simple',
-        path: 'toDoSimple'
+        name: 'To Do Simple Task',
+        path: 'playgroundToDoSimpleTask'
     }
 ]

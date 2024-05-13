@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 
-import { itemsTabsComponents } from './components/db/itemsTabs.db';
+import { itemsTabsComponents } from './components/db/itemsTabsComponents.db';
 
 @Injectable({
   providedIn: 'root'

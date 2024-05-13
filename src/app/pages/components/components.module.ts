@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 
 import { ComponentsRoutingModule } from './components-routing.module';
 import { SharedModule } from './../../shared/shared.module';
+import { ToDoSimpleTaskModule } from './tasks/to-do-simple-task/to-do-simple-task.module';
 
 import { PlaygroundComponentsComponent } from './playground-components.component';
 import { GreetingComponent } from './components/greeting/greeting.component';
@@ -18,7 +19,6 @@ import { AlertComponent } from './components/alert/alert.component';
 import { AddWithInputComponent } from './tasks/add-with-input/add-with-input.component';
 import { ChronometerOutputTaskComponent } from './tasks/chronometer-output-task/chronometer-output-task.component';
 import { TwoWayBindingComponent } from './components/two-way-binding/two-way-binding.component';
-import { ToDoSimpleComponent } from './tasks/to-do-simple/to-do-simple.component';
 
 
 @NgModule({
@@ -36,13 +36,13 @@ import { ToDoSimpleComponent } from './tasks/to-do-simple/to-do-simple.component
     AddWithInputComponent,
     ChronometerOutputTaskComponent,
     TwoWayBindingComponent,
-    ToDoSimpleComponent
   ],
   imports: [
     CommonModule,
     FormsModule,
     ComponentsRoutingModule,
-    SharedModule
+    SharedModule,
+    ToDoSimpleTaskModule
   ],
   exports: [
     PlaygroundComponentsComponent

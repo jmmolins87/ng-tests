@@ -13,7 +13,8 @@ import { AlertComponent } from './components/alert/alert.component';
 import { AddWithInputComponent } from './tasks/add-with-input/add-with-input.component';
 import { ChronometerOutputTaskComponent } from './tasks/chronometer-output-task/chronometer-output-task.component';
 import { TwoWayBindingComponent } from './components/two-way-binding/two-way-binding.component';
-import { ToDoSimpleComponent } from './tasks/to-do-simple/to-do-simple.component';
+import { PlaygroundToDoSimpleTaskComponent } from './tasks/to-do-simple-task/playground-to-do-simple-task.component';
+
 
 const routes: Routes = [
   {
@@ -65,8 +66,8 @@ const routes: Routes = [
     component: TwoWayBindingComponent
   },
   {
-    path: 'toDoSimple',
-    component: ToDoSimpleComponent
+    path: 'playgroundToDoSimpleTask',
+    component: PlaygroundToDoSimpleTaskComponent
   },
   {
     path: '',

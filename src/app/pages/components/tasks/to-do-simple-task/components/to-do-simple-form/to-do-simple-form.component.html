@@ -1,0 +1,36 @@
+
+
+
+<div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Tarea</h5>
+      <div class="input-group my-3">
+        <span id="title" class="input-group-text">Título</span>
+        <input 
+            [(ngModel)]="task.title"
+            type="text" 
+            class="form-control"
+            placeholder="Escriba un título para la tarea" 
+            aria-label="Título" 
+            aria-describedby="title">
+      </div>
+      <div class="input-group mb-3">
+        <span id="description" class="input-group-text">Descripción</span>
+        <input 
+            [(ngModel)]="task.description"
+            type="text" 
+            class="form-control"
+            placeholder="Escriba un descripción para la tarea" 
+            aria-label="Descripción" 
+            aria-describedby="description">
+      </div>
+      <div class="d-flex justify-content-end">
+        <button 
+          (click)="addTask()"
+          type="button" 
+          class="btn btn-primary">
+          Guardar
+        </button>
+      </div>
+    </div>
+</div>
