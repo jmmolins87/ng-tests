@@ -9,10 +9,9 @@ export class ChronometerTaskComponent {
 
   public counter: number = 10;
   public finishCounter: boolean = false;
+  public numbers: number[] = [1, 2, 4, 5, 8, 9, 10];
 
-  constructor() {
-    
-  }
+  constructor() { }
 
   startCounter() {
     let interval = setInterval(() => {
@@ -23,6 +22,10 @@ export class ChronometerTaskComponent {
         this.finishCounter = true;
       }
     }, 1000);
+  }
+
+  onFinishChronometer($event: any) {
+    console.log($event);
   }
 
 }

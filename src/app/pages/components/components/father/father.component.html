@@ -3,3 +3,6 @@
 <app-son-two />
 
 <app-alert (alertClicked)="onClickAlert()" />
+<app-alert 
+    [message]="messageEvent" 
+    (alertClicked)="onClickAlertWithEvent($event)" />

@@ -11,6 +11,9 @@ import { ChronometerTaskComponent } from './tasks/chronometer-task/chronometer-t
 import { CalculatorTaskComponent } from './tasks/calculator-task/calculator-task.component';
 import { AlertComponent } from './components/alert/alert.component';
 import { AddWithInputComponent } from './tasks/add-with-input/add-with-input.component';
+import { ChronometerOutputTaskComponent } from './tasks/chronometer-output-task/chronometer-output-task.component';
+import { TwoWayBindingComponent } from './components/two-way-binding/two-way-binding.component';
+import { ToDoSimpleComponent } from './tasks/to-do-simple/to-do-simple.component';
 
 const routes: Routes = [
   {
@@ -52,6 +55,18 @@ const routes: Routes = [
   {
     path: 'addTaskWithInput',
     component: AddWithInputComponent
+  },
+  {
+    path: 'chronometerOutputTask',
+    component: ChronometerOutputTaskComponent
+  },
+  {
+    path: 'twoWayBinding',
+    component: TwoWayBindingComponent
+  },
+  {
+    path: 'toDoSimple',
+    component: ToDoSimpleComponent
   },
   {
     path: '',

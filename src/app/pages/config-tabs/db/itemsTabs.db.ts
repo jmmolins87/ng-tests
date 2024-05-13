@@ -43,5 +43,17 @@ export const itemsTabs: ItemsTabs[] = [
     {
         name: 'Add task with Input',
         path: 'addTaskWithInput'
+    },
+    {
+        name: 'Chronometer Output',
+        path: 'chronometerOutputTask'
+    },
+    {
+        name: 'Two Way Binding',
+        path: 'twoWayBinding'
+    },
+    {
+        name: 'To Do Simple',
+        path: 'toDoSimple'
     }
 ]

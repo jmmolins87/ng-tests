@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 import { ComponentsRoutingModule } from './components-routing.module';
 
@@ -15,6 +16,9 @@ import { CalculatorTaskComponent } from './tasks/calculator-task/calculator-task
 import { AlertComponent } from './components/alert/alert.component';
 import { AddWithInputComponent } from './tasks/add-with-input/add-with-input.component';
 import { ConfigTabsModule } from '../config-tabs/config-tabs.module';
+import { ChronometerOutputTaskComponent } from './tasks/chronometer-output-task/chronometer-output-task.component';
+import { TwoWayBindingComponent } from './components/two-way-binding/two-way-binding.component';
+import { ToDoSimpleComponent } from './tasks/to-do-simple/to-do-simple.component';
 
 
 @NgModule({
@@ -29,12 +33,16 @@ import { ConfigTabsModule } from '../config-tabs/config-tabs.module';
     ChronometerTaskComponent,
     CalculatorTaskComponent,
     AlertComponent,
-    AddWithInputComponent
+    AddWithInputComponent,
+    ChronometerOutputTaskComponent,
+    TwoWayBindingComponent,
+    ToDoSimpleComponent
   ],
   imports: [
     CommonModule,
+    FormsModule,
     ComponentsRoutingModule,
-    ConfigTabsModule
+    ConfigTabsModule,
   ],
   exports: [
     PlaygroundComponentsComponent

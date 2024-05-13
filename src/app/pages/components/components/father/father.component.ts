@@ -7,8 +7,14 @@ import { Component } from '@angular/core';
 })
 export class FatherComponent {
 
+  public messageEvent: string = 'Alerta con un Output con evento'
+
   onClickAlert() {
     console.log('Alerta pulsada');
+  }
+
+  onClickAlertWithEvent($event: any) {
+    console.log('Alerta pulsada con evento:', $event);
   }
 
 }
