@@ -1,0 +1,53 @@
+
+
+<div class="wrap-add-person">
+    <button (click)="addPerson()" class="btn btn-outline-success">Agregar nueva persona</button>
+</div>
+
+<h3>Lista de usuarios</h3>
+<div class="wrap-list">
+    <ul class="list-group">
+        <li 
+            *ngFor="let person of people; let i = index"
+            class="list-group-item">
+            {{ i + 1 }} - 
+            <strong>Nombre:</strong> {{ person.name }}, 
+            <strong>Apellido:</strong> {{ person.surname }}, 
+            <strong>Edad:</strong> {{ person.age }}
+        </li>
+    </ul>
+</div>
+
+<h3 class="mt-3">Tarjeta de usuarios</h3>
+<div class="row">
+    <div *ngFor="let person of people" class="col-4">
+        <div class="card mt-3">
+            <div class="card-body">
+                <h5>Nombre:</h5>
+                <h3 class="card-title">{{ person.name }}</h3>
+                <h5>Apellido:</h5>
+                <h3 class="card-title">{{ person.surname }}</h3>
+                <h5>Edad:</h5>
+                <h3 class="card-title">{{ person.age }}</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h3 class="mt-3">Tabla de usuarios</h3>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Nombre</th>
+        <th scope="col">Apellido</th>
+        <th scope="col">Edad</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let person of people">
+        <th>{{ person.name }}</th>
+        <td>{{ person.surname }}</td>
+        <td>{{ person.age }}</td>
+      </tr>
+    </tbody>
+</table>

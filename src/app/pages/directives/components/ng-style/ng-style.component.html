@@ -1,0 +1,42 @@
+
+
+<p [ngStyle]="stylesPropsParagraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, soluta.</p>
+
+<p>Seleccione un botón para cambiar el color del párrafo:</p>
+<div class="wrap-buttons">
+    <button 
+        (click)="changeColor('s')" 
+        class="btn btn-outline-success">
+        Verde
+    </button>
+    <button 
+        (click)="changeColor('d')" 
+        class="btn btn-outline-danger">
+        Rojo
+    </button>
+    <button 
+        (click)="changeColor('w')" 
+        class="btn btn-outline-warning">
+        Amarillo
+    </button>
+</div>
+
+<p class="mt-3">Escriba un color (hexádecimal, rgb, rgba o en texto) para cambiar el color del párrafo:</p>
+<div class="wrap-input">
+    <input 
+        type="text" 
+        class="form-control" 
+        placeholder="Escriba un color" 
+        [(ngModel)]="stylesPropsParagraph.color">
+</div>
+
+<p class="mt-3">Seleccione un tamaño para el párrafo:</p>
+<div class="wrap-input">
+    <input 
+        (input)="onChangeFontSize($event)"
+        type="range" 
+        min="12"
+        max="50"
+        step="2"
+        class="form-range" >
+</div>

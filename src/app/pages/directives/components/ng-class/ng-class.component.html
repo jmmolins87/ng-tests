@@ -1,0 +1,15 @@
+
+
+
+<div class="d-flex">
+    <div [ngClass]="classesArray" class="light-traffic me-3"></div>
+    <div 
+        [ngClass]="{ 
+            circle: true, 
+            red: (colorSelected === 'r'),
+            green: (colorSelected === 'g'),
+            yellow: (colorSelected === 'y')
+        }" 
+        class="light-traffic">
+    </div>
+</div>

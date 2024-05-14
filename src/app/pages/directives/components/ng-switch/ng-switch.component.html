@@ -1,0 +1,25 @@
+
+
+
+
+
+
+<ul [ngSwitch]="optionNumber" class="list-group">
+    <li class="list-group-item">
+        <span *ngSwitchCase="1">Opción 1</span>
+        <span *ngSwitchCase="2">Opción 2</span>
+        <span *ngSwitchCase="3">Opción 3</span>
+        <span *ngSwitchCase="4">Opción 4</span>
+        <span *ngSwitchDefault="5">Ninguna de las anteriores</span>
+    </li>
+</ul>
+
+<ul [ngSwitch]="optionString" class="list-group mt-3">
+    <li class="list-group-item">
+        <span *ngSwitchCase="'uno'">Opción 1</span>
+        <span *ngSwitchCase="'dos'">Opción 2</span>
+        <span *ngSwitchCase="'tres'">Opción 3</span>
+        <span *ngSwitchCase="'cuatro'">Opción 4</span>
+        <span *ngSwitchDefault="'cinco'">Ninguna de las anteriores</span>
+    </li>
+</ul>

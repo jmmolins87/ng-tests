@@ -1,0 +1,19 @@
+
+
+
+
+<div class="row">
+    <div class="col-8">
+        <h3 *ngIf="showParragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, ut!</h3>
+    </div>
+    <div class="col-4">
+        <button 
+            (click)="showHideText()" 
+            [ngClass]="showParragraph ? 'btn-danger' : 'btn-success'"
+            class="btn w-100 mt-2">
+            <span *ngIf="showParragraph; else showText">Ocultar texto</span>
+            <ng-template #showText>Mostrar texto</ng-template>
+        </button>
+    </div>
+</div>
+

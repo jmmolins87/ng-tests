@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 // * Components
-import { HomeComponent } from '../shared/components/home/home.component';
 import { PlaygroundComponentsComponent } from './components/playground-components.component';
 import { PlaygroundDirectivesComponent } from './directives/playground-directives.component';
 import { PlaygroundRoutingComponent } from './routing/playground-routing.component';
@@ -22,7 +21,8 @@ const routes: Routes = [
   },
   {
     path: 'directives',
-    component: PlaygroundDirectivesComponent
+    component: PlaygroundDirectivesComponent,
+    loadChildren: () => import('./directives/directives.module').then( m => m.DirectivesModule )
   },
   {
     path: 'routing',
