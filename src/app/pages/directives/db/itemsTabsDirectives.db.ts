@@ -28,6 +28,10 @@ export const itemsTabsDirectives: ItemsTabs[] = [
     },
     {
         name: 'To Do Complex Task',
-        path: 'toDoComplexTask'
+        path: 'toDoComplex'
+    },
+    {
+        name: 'Register Box Task',
+        path: 'registerBox'
     }
 ]
