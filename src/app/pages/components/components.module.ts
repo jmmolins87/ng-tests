@@ -19,6 +19,7 @@ import { AlertComponent } from './components/alert/alert.component';
 import { AddWithInputComponent } from './tasks/add-with-input/add-with-input.component';
 import { ChronometerOutputTaskComponent } from './tasks/chronometer-output-task/chronometer-output-task.component';
 import { TwoWayBindingComponent } from './components/two-way-binding/two-way-binding.component';
+import { LifeCicleComponent } from './components/life-cicle/life-cicle.component';
 
 
 @NgModule({
@@ -36,6 +37,7 @@ import { TwoWayBindingComponent } from './components/two-way-binding/two-way-bin
     AddWithInputComponent,
     ChronometerOutputTaskComponent,
     TwoWayBindingComponent,
+    LifeCicleComponent,
   ],
   imports: [
     CommonModule,

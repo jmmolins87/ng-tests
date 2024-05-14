@@ -1,0 +1,10 @@
+
+
+
+<div *ngIf="!textInput; else noTextInput">
+    <h3>Consultar en la consola</h3>
+</div>
+
+<ng-template #noTextInput>
+    <h3>{{ textInput }}</h3>
+</ng-template>

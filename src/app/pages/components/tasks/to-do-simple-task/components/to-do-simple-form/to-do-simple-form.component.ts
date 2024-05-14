@@ -21,6 +21,7 @@ export class ToDoSimpleFormComponent {
 
   addTask() {
     this.createTask.emit(this.task);
+    if( this.task.title === '' || this.task.description === '') return; // Prevent empty tasks from being added to the list.
     this.task = new Task('', ''); // Reset the form.
   }
 

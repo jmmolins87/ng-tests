@@ -14,6 +14,7 @@ import { AddWithInputComponent } from './tasks/add-with-input/add-with-input.com
 import { ChronometerOutputTaskComponent } from './tasks/chronometer-output-task/chronometer-output-task.component';
 import { TwoWayBindingComponent } from './components/two-way-binding/two-way-binding.component';
 import { PlaygroundToDoSimpleTaskComponent } from './tasks/to-do-simple-task/playground-to-do-simple-task.component';
+import { LifeCicleComponent } from './components/life-cicle/life-cicle.component';
 
 
 const routes: Routes = [
@@ -68,6 +69,10 @@ const routes: Routes = [
   {
     path: 'playgroundToDoSimpleTask',
     component: PlaygroundToDoSimpleTaskComponent
+  }, 
+  {
+    path: 'lifeCicle',
+    component: LifeCicleComponent
   },
   {
     path: '',

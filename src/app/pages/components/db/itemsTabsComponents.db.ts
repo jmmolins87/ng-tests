@@ -57,5 +57,9 @@ export const itemsTabsComponents: ItemsTabs[] = [
     {
         name: 'To Do Simple Task',
         path: 'playgroundToDoSimpleTask'
+    },
+    {
+        name: 'Life Cicle',
+        path: 'lifeCicle'
     }
 ]
