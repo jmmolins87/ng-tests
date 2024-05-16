@@ -1,0 +1,33 @@
+
+
+
+<div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Lista de tareas</h5>
+        <ul *ngIf="tasks.length > 0" class="list-group mt-3">
+            <li 
+                *ngFor="let task of tasks; let i = index" 
+                [ngClass]="task.isCompleted ? 'alert-success' : 'alert-danger'"
+                class="list-group border-bottom p-3 alert">
+                <span class="list-title">{{ i + 1 }}. {{ task.title }}</span>
+                <span class="list-description">{{ task.description }}</span>
+                <div class="d-flex justify-content-between align-items-center mt-1">
+                    <button (click)="deleteTask(i)" class="btn btn-danger w-50 me-2">Eliminar</button>
+                    <button 
+                        (click)="completedTask(i)" 
+                        [ngClass]="task.isCompleted ? 'btn-info' : 'btn-success'"
+                        class="btn w-50">
+                        <span *ngIf="!task.isCompleted">Completar</span>
+                        <span *ngIf="task.isCompleted">Reaundar tarea</span>
+                    </button>
+                </div> 
+            </li>
+        </ul>
+        <div 
+            *ngIf="tasks.length <= 0" 
+            class="alert alert-danger mt-3" 
+            role="alert">
+            <span>No hay tareas que mostrar</span>
+        </div>
+    </div>
+</div>

@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 
 import { DirectivesRoutingModule } from './directives-routing.module';
 import { SharedModule } from './../../shared/shared.module';
+import { ToDoComplexTaskModule } from './tasks/to-do-complex-task/to-do-complex-task.module';
 
 import { PlaygroundDirectivesComponent } from './playground-directives.component';
 import { NgStyleComponent } from './components/ng-style/ng-style.component';
@@ -11,7 +12,6 @@ import { NgClassComponent } from './components/ng-class/ng-class.component';
 import { NgIfComponent } from './components/ng-if/ng-if.component';
 import { NgForComponent } from './components/ng-for/ng-for.component';
 import { NgSwitchComponent } from './components/ng-switch/ng-switch.component';
-import { ToDoComplexTaskComponent } from './tasks/to-do-complex-task/to-do-complex-task.component';
 import { RegisterBoxTaskComponent } from './tasks/register-box-task/register-box-task.component';
 
 
@@ -23,14 +23,14 @@ import { RegisterBoxTaskComponent } from './tasks/register-box-task/register-box
     NgIfComponent,
     NgForComponent,
     NgSwitchComponent,
-    ToDoComplexTaskComponent,
     RegisterBoxTaskComponent
   ],
   imports: [
     CommonModule,
     FormsModule,
     DirectivesRoutingModule,
-    SharedModule
+    SharedModule,
+    ToDoComplexTaskModule
   ],
   exports: [
     PlaygroundDirectivesComponent

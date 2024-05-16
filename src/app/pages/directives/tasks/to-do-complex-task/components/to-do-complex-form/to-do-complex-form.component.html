@@ -1,6 +1,7 @@
 
 
 
+
 <div class="card">
     <div class="card-body">
       <h5 class="card-title">Tarea</h5>
@@ -27,6 +28,7 @@
       <div class="d-flex justify-content-end">
         <button 
           (click)="addTask()"
+          [disabled]="task.title === '' || task.description === ''"
           type="button" 
           class="btn btn-primary w-25">
           Guardar

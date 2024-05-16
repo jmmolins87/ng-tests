@@ -2,10 +2,6 @@
 .card-title {
     margin: 0;
 }
-.list-group.border-bottom {
-    border-bottom: 1px solid var(--border-list, #b4b2b2);
-    border-radius: 0;
-}
 .list-title {
     font-size: 22px;
 }

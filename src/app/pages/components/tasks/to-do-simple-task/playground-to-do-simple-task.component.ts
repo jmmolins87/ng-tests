@@ -14,7 +14,6 @@ export class PlaygroundToDoSimpleTaskComponent {
 
   onCreatedTask($event: Task) {
     this.tasks.push($event);
-    console.log($event);
   }
 
 }
