@@ -1,0 +1,19 @@
+
+
+
+<h1>Caja registradora</h1>
+<div class="row">
+    <div class="col-9">
+        <app-list-products 
+            [title]="titleEatSector" 
+            [products]="arrFoods" 
+            (productSelected)="addProduct($event)" />
+        <app-list-products 
+            [title]="titleDrinkSector"
+            [products]="arrDrinks" 
+            (productSelected)="addProduct($event)" />
+    </div>
+    <div class="col-3">
+        <app-command-products [commandProducts]="selectedProducts" />
+    </div>
+</div>

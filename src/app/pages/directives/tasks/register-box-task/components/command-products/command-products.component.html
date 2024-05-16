@@ -1,0 +1,28 @@
+
+
+<div class="wrap-command">
+    <h2 class="title text-center text-light mt-3 p-1">Comanda</h2>
+    <div *ngIf="commandProducts.length > 0" class="card card-total">
+        <div class="card-body">
+            <h5 class="card-title m-0">Total: {{ calculateTotal() }}€</h5>
+        </div>
+    </div>
+    <ul class="list-group">
+        <li *ngFor="let command of commandProducts; let i = index" class="list-group-item mt-2">
+            <div class="card">
+                <img 
+                    [src]="command.imgUrl" 
+                    [alt]="command.name"
+                    [title]="command.name"
+                    class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">{{ command.name }} X {{ command.quantity }} =  {{ command.price * command.quantity }}€</h5>
+                    <div class="wrap-buttons">
+                        <button (click)="deleteUnitProducts(i)" class="btn btn-outline-danger w-100">Borrar Unidad</button>
+                        <button (click)="deleteAllProducts(i)" class="btn btn-outline-danger w-100 mt-1">Borrar producto</button>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>

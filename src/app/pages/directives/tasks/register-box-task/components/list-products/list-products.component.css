@@ -1,0 +1,8 @@
+
+
+.title {
+    background: var(--bg-title, #0d6efd);
+}
+.card-img-top {
+    height: 150px;
+}

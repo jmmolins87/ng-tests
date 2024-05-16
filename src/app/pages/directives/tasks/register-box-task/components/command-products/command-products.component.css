@@ -1,0 +1,24 @@
+
+.wrap-command {
+    position: sticky;
+    top: 80px;
+    max-height: 85vh;
+    overflow-y: scroll;
+}
+.wrap-command .title {
+    background: var(--bg-title, #0d6efd);
+}
+.wrap-command .wrap-buttons {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.wrap-command .card-total {
+    position: sticky;
+    top: 1px;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, .7);
+    backdrop-filter: blur(80px);
+}
