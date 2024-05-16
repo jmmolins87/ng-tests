@@ -6,6 +6,7 @@ import { DirectivesRoutingModule } from './directives-routing.module';
 import { SharedModule } from './../../shared/shared.module';
 import { ToDoComplexTaskModule } from './tasks/to-do-complex-task/to-do-complex-task.module';
 import { RegisterBoxTaskModule } from './tasks/register-box-task/register-box-task.module';
+import { ListShopTaskModule } from './tasks/list-shop-task/list-shop-task.module';
 
 import { PlaygroundDirectivesComponent } from './playground-directives.component';
 import { NgStyleComponent } from './components/ng-style/ng-style.component';
@@ -43,7 +44,8 @@ import { InputDirective } from './components/personalize-directives/directives/i
     DirectivesRoutingModule,
     SharedModule,
     ToDoComplexTaskModule,
-    RegisterBoxTaskModule
+    RegisterBoxTaskModule,
+    ListShopTaskModule
   ],
   exports: [
     PlaygroundDirectivesComponent

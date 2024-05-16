@@ -9,6 +9,7 @@ import { NgSwitchComponent } from './components/ng-switch/ng-switch.component';
 import { PlaygroundToDoComplexTaskComponent } from './tasks/to-do-complex-task/playground-to-do-complex-task.component';
 import { PlaygroundRegisterBoxTaskComponent } from './tasks/register-box-task/playground-register-box-task.component';
 import { PersonalizeDirectivesComponent } from './components/personalize-directives/personalize-directives.component';
+import { PlaygroundListShopTaskComponent } from './tasks/list-shop-task/playground-list-shop-task.component';
 
 const routes: Routes = [
   {
@@ -42,6 +43,10 @@ const routes: Routes = [
   {
     path: 'PersonalizeDirectives',
     component: PersonalizeDirectivesComponent
+  },
+  {
+    path: 'listShop',
+    component: PlaygroundListShopTaskComponent
   },
   {
     path: '',

@@ -37,5 +37,9 @@ export const itemsTabsDirectives: ItemsTabs[] = [
     {
         name: 'Personalize Directives',
         path: 'PersonalizeDirectives'
+    },
+    {
+        name: 'List Shop Task',
+        path: 'listShop'
     }
 ]
