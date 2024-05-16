@@ -13,6 +13,13 @@ import { NgClassComponent } from './components/ng-class/ng-class.component';
 import { NgIfComponent } from './components/ng-if/ng-if.component';
 import { NgForComponent } from './components/ng-for/ng-for.component';
 import { NgSwitchComponent } from './components/ng-switch/ng-switch.component';
+import { PersonalizeDirectivesComponent } from './components/personalize-directives/personalize-directives.component';
+
+import { UnderlineDirective } from './components/personalize-directives/directives/underline.directive';
+import { RendererDirective } from './components/personalize-directives/directives/renderer.directive';
+import { HostListenerDirective } from './components/personalize-directives/directives/host-listener.directive';
+import { HostBindingDirective } from './components/personalize-directives/directives/host-binding.directive';
+import { InputDirective } from './components/personalize-directives/directives/input.directive';
 
 
 @NgModule({
@@ -22,7 +29,13 @@ import { NgSwitchComponent } from './components/ng-switch/ng-switch.component';
     NgClassComponent,
     NgIfComponent,
     NgForComponent,
-    NgSwitchComponent
+    NgSwitchComponent,
+    PersonalizeDirectivesComponent,
+    UnderlineDirective,
+    RendererDirective,
+    HostListenerDirective,
+    HostBindingDirective,
+    InputDirective
   ],
   imports: [
     CommonModule,

@@ -8,6 +8,7 @@ import { NgForComponent } from './components/ng-for/ng-for.component';
 import { NgSwitchComponent } from './components/ng-switch/ng-switch.component';
 import { PlaygroundToDoComplexTaskComponent } from './tasks/to-do-complex-task/playground-to-do-complex-task.component';
 import { PlaygroundRegisterBoxTaskComponent } from './tasks/register-box-task/playground-register-box-task.component';
+import { PersonalizeDirectivesComponent } from './components/personalize-directives/personalize-directives.component';
 
 const routes: Routes = [
   {
@@ -37,6 +38,10 @@ const routes: Routes = [
   { 
     path: 'registerBox',
     component: PlaygroundRegisterBoxTaskComponent
+  },
+  {
+    path: 'PersonalizeDirectives',
+    component: PersonalizeDirectivesComponent
   },
   {
     path: '',

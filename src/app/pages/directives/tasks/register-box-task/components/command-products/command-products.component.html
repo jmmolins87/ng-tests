@@ -2,13 +2,11 @@
 
 <div class="wrap-command">
     <h2 class="title text-center text-light mt-3 p-1">Comanda</h2>
-    <div *ngIf="commandProducts.length > 0" class="card card-total">
-        <div class="card-body">
-            <h5 class="card-title m-0">Total: {{ calculateTotal() }}€</h5>
-        </div>
+    <div *ngIf="commandProducts.length > 0" class="alert alert-success card-total mb-0">
+        <span class="card-title m-0">Total: <span class="total">{{ calculateTotal() }}€</span></span>
     </div>
-    <ul class="list-group">
-        <li *ngFor="let command of commandProducts; let i = index" class="list-group-item mt-2">
+    <ul class="list-group mt-2">
+        <li *ngFor="let command of commandProducts; let i = index" class="list-group-item">
             <div class="card">
                 <img 
                     [src]="command.imgUrl" 
@@ -25,4 +23,5 @@
             </div>
         </li>
     </ul>
+    <div *ngIf="commandProducts.length <= 0" class="alert alert-danger">No hay nada en su comanda</div>
 </div>

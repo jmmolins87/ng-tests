@@ -33,5 +33,9 @@ export const itemsTabsDirectives: ItemsTabs[] = [
     {
         name: 'Register Box Task',
         path: 'registerBox'
+    },
+    {
+        name: 'Personalize Directives',
+        path: 'PersonalizeDirectives'
     }
 ]
