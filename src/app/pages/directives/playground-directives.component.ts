@@ -14,8 +14,8 @@ export class PlaygroundDirectivesComponent {
 
   public itemsTabsDirectives: ItemsTabs[];
 
-  constructor( private _componentsService: PagesService ) {
-    this.itemsTabsDirectives = this._componentsService.itemsTabsDirectives;
+  constructor( private _directivesService: PagesService ) {
+    this.itemsTabsDirectives = this._directivesService.itemsTabsDirectives;
   }
 
 }

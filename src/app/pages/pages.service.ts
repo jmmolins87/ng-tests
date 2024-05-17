@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 
 import { itemsTabsComponents } from './components/db/itemsTabsComponents.db';
 import { itemsTabsDirectives } from './directives/db/itemsTabsDirectives.db';
+import { itemsTabsRouting } from './routing/db/itemsTabsRouting.db';
 
 @Injectable({
   providedIn: 'root'
@@ -16,5 +17,9 @@ export class PagesService {
 
   get itemsTabsDirectives() {
     return itemsTabsDirectives;
+  }
+
+  get itemsTabsRouting() {
+    return itemsTabsRouting;
   }
 }
