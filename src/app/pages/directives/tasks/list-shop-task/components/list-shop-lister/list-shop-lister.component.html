@@ -1,0 +1,30 @@
+
+
+<div class="wrap-lsit-shop">
+    <h4 class="title-list">{{ titleList }}</h4>
+    <ul class="list-group">
+        <li *ngFor="let product of products; let i = index" class="list-group-item">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Producto: {{ product.name }}</h5>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="card-text">Cantidad: {{ product.quantity }}</span>
+                        <span class="card-text">Tienda: {{ product.department }}</span>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-end align-items-center">
+                    <button 
+                        (click)="buyProduct(i)" 
+                        [ngClass]="{
+                            'btn-outline-primary': textButton === 'Comprar', 
+                            'btn-outline-danger': textButton === 'Quitar de la cesta'
+                        }"
+                        class="btn btn-outline-primary">{{ textButton }}</button>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <div *ngIf="products.length <= 0">
+        <div class="alert alert-danger">{{ textAlert }}</div>
+    </div>
+</div>

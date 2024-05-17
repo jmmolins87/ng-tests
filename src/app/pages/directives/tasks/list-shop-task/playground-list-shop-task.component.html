@@ -1,1 +1,26 @@
-<p>playground-list-shop-task works!</p>
+
+
+
+<div class="row">
+    <div class="col-12">
+        <app-list-shop-form (createProduct)="collectProductsSelected($event)" />
+    </div>
+</div>
+<div class="row mt-3">
+    <div class="col-12 mt-3 offset-1 col-lg-6 offset-lg-0 mt-lg-0">
+        <app-list-shop-lister 
+            [products]="selectedProduct" 
+            [textAlert]="slectedProducts" 
+            [titleList]="titleListSelected"
+            [textButton]="'Comprar'"
+            (selectedProduct)="selectedProductToBuy($event)" />
+    </div>
+    <div class="col-12 mt-3 offset-1 col-lg-6 offset-lg-0 mt-lg-0">
+        <app-list-shop-lister 
+            [textAlert]="shopProducts" 
+            [titleList]="titleListShopping"
+            [products]="purchasedProducts" 
+            [textButton]="'Quitar de la cesta'"
+            (selectedProduct)="noSelectedProduct($event)" />
+    </div>
+</div>

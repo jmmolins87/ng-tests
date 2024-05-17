@@ -1,0 +1,47 @@
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">Producto</h5>
+        <div class="input-group my-3">
+            <span id="name" class="input-group-text w-25">Nombre</span>
+            <input 
+                [(ngModel)]="product.name"
+                type="text" 
+                class="form-control" 
+                placeholder="Escriba el nombre del producto que desea"
+                aria-label="Nombre del producto" 
+                aria-describedby="name">
+        </div>
+        <div class="input-group my-3">
+            <label for="quantity" class="input-group-text w-25">Cantidad: {{ product.quantity }}</label>
+            <input 
+                [(ngModel)]="product.quantity"
+                type="range" 
+                min="0" 
+                max="15" 
+                step="1" 
+                id="quantity"
+                class="form-range">
+        </div>
+        <div class="input-group mb-3">
+            <span id="description" class="input-group-text w-25">Departamento</span>
+            <select 
+                [(ngModel)]="product.department"
+                class="form-select" 
+                aria-label="Default select example">
+                <option selected>Seleccione una tienda</option>
+                <option value="carniceria">Carnicería</option>
+                <option value="panaderia">Panadería</option>
+                <option value="pescaderia">Pescadería</option>
+                <option value="fruteria">Frutería</option>
+            </select>
+        </div>
+        <div class="d-flex justify-content-end">
+            <button 
+                (click)="sendProduct()"
+                type="button" 
+                class="btn btn-primary w-25">
+                Guardar
+            </button>
+        </div>
+    </div>
+</div>

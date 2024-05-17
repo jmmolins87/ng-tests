@@ -5,7 +5,7 @@ export class Product {
     quantity: number;
     department: string;
 
-    constructor( cName: string, cQuantity: number, cDepartment: string ) {
+    constructor( cName: string = '', cQuantity: number = 0, cDepartment: string = '' ) {
         this.name = cName;
         this.quantity = cQuantity;
         this.department = cDepartment;
