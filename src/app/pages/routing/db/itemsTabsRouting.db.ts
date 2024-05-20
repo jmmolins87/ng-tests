@@ -19,7 +19,19 @@ export const itemsTabsRouting: ItemsTabs[] = [
         path: 'routerLink'
     },
     {
-        name: 'RouterNavigate',
+        name: 'Router Navigate',
         path: 'routerNavigate'
+    },
+    {
+        name: 'Dynamic Route',
+        path: 'dynamicRoute'
+    },
+    {
+        name: 'Child Routes',
+        path: 'childRoutes'
+    },
+    {
+        name: 'Router Guard',
+        path: 'routerGuard'
     }
 ]

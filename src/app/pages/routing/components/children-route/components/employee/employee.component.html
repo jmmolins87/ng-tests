@@ -1,0 +1,20 @@
+
+
+
+<div class="row">
+    <div class="col-9">
+        <p>Accediendo al empleado con ID: {{ employeeId }}</p>
+        <p><i>Si cambia el valor del id en la url y añade una de las tres páginas hijas se cambiara el título. Las tres variantes son: projects, experience o cv, hay que cambiarlo o agregarlo después del número de id del empelado.</i></p>
+        <p>Por ejemplo: http://localhost:4200/routing/childRoutes/employee/10/cv</p>
+        <hr>
+        <p>Esta es la página del empleado {{ employeeId }}</p>
+        <router-outlet />
+    </div>
+    <div class="col-3">
+        <img 
+            src="./../../../../../../../assets/img/code/children-route.png" 
+            alt="Children route" 
+            title="children route"
+            class="img-fluid">
+    </div>
+</div>
