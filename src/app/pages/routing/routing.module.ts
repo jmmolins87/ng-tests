@@ -9,7 +9,7 @@ import { PlaygroundRoutingComponent } from './playground-routing.component';
 
 @NgModule({
   declarations: [
-    PlaygroundRoutingComponent
+    PlaygroundRoutingComponent,
   ],
   imports: [
     CommonModule,

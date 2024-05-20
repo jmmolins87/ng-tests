@@ -1,0 +1,11 @@
+<h2>Rutas básicas</h2>
+<nav class="nav">
+    <a 
+        *ngFor="let item of itemsTabs" 
+        aria-current="page" 
+        [routerLink]="[ item.path ]"
+        class="nav-link active">
+        {{ item.name }}
+    </a>
+</nav>
+<router-outlet />

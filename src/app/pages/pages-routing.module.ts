@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-// * Components
+// * Components -> Playgrounds
 import { PlaygroundComponentsComponent } from './components/playground-components.component';
 import { PlaygroundDirectivesComponent } from './directives/playground-directives.component';
 import { PlaygroundRoutingComponent } from './routing/playground-routing.component';
@@ -26,7 +26,8 @@ const routes: Routes = [
   },
   {
     path: 'routing',
-    component: PlaygroundRoutingComponent
+    component: PlaygroundRoutingComponent,
+    loadChildren: () => import('./routing/routing.module').then( m => m.RoutingModule )
   },
   {
     path: 'services',

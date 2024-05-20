@@ -9,5 +9,17 @@ export const itemsTabsRouting: ItemsTabs[] = [
     {
         name: 'Basic Routes',
         path: 'basicRoutes'
+    },
+    {
+        name: 'Root Path and route **',
+        path: 'rootPath'
+    },
+    {
+        name: '[RouterLink] & RouterLinkActive',
+        path: 'routerLink'
+    },
+    {
+        name: 'RouterNavigate',
+        path: 'routerNavigate'
     }
 ]
