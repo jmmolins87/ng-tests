@@ -31,7 +31,8 @@ const routes: Routes = [
   },
   {
     path: 'services',
-    component: PlaygroundServicesComponent
+    component: PlaygroundServicesComponent,
+    loadChildren: () => import('./services/services.module').then( m => m.ServicesModule )
   },
   {
     path: 'forms',

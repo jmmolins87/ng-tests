@@ -2,16 +2,28 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { ServicesRoutingModule } from './services-routing.module';
+import { SharedModule } from './../../shared/shared.module';
+
 import { PlaygroundServicesComponent } from './playground-services.component';
+import { PeopleServiceComponent } from './components/people-service/people-service.component';
+import { ListServiceComponent } from './components/list-service/list-service.component';
+import { ServiceWithPromiseComponent } from './components/service-with-promise/service-with-promise.component';
 
 
 @NgModule({
   declarations: [
-    PlaygroundServicesComponent
+    PlaygroundServicesComponent,
+    PeopleServiceComponent,
+    ListServiceComponent,
+    ServiceWithPromiseComponent
   ],
   imports: [
     CommonModule,
-    ServicesRoutingModule
+    ServicesRoutingModule,
+    SharedModule
+  ],
+  exports: [
+    PlaygroundServicesComponent
   ]
 })
 export class ServicesModule { }
