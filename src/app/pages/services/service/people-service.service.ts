@@ -22,4 +22,23 @@ export class PeopleServiceService {
   get allPeople() {
     return this.person;
   }
+
+  createNewUser(newPerson: Person) {
+    this.person.push(newPerson);
+  }
+
+  active(): Promise<Person[]> {
+    const prom = new Promise<Person[]>((resolve, reject) => {
+      const arrTemp: Person[] = [];
+      for( let person of this.person ) {
+        if( person.isActive ) {
+          arrTemp.push(person);
+        }
+      }
+      resolve(arrTemp);
+    });
+
+    return prom;
+  }
+
 }

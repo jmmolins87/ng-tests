@@ -1,1 +1,17 @@
-<p>service-with-promise works!</p>
+
+
+<div class="wrap-button">
+    <button 
+        (click)="activePeople()"
+        class="btn btn-outline-success">
+        Personas activas
+    </button>
+</div>
+<div class="list-group mt-3">
+    <span 
+        *ngFor="let person of listPeople" 
+        [ngClass]="person.isActive ? 'list-group-item-info' : 'list-group-item-danger'"
+        class="list-group-item list-group-item-action list-group-item">
+        {{ person.name }}, {{ person.surname }}, {{ person.age}}, {{ person.isActive }}
+    </span>
+</div>

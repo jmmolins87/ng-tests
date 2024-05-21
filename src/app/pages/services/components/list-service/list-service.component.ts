@@ -19,7 +19,7 @@ export class ListServiceComponent {
   }
 
   addUser() {
-    this.listPeople.push(new Person('New', 'User', 25, true))
+    this._personListService.createNewUser(new Person('New', 'User', 25, true));
   }
 
 }

@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { PeopleServiceComponent } from './components/people-service/people-service.component';
 import { ListServiceComponent } from './components/list-service/list-service.component';
+import { ServiceWithPromiseComponent } from './components/service-with-promise/service-with-promise.component';
 
 const routes: Routes = [
   {
@@ -17,6 +18,10 @@ const routes: Routes = [
   {
     path: 'listService',
     component: ListServiceComponent
+  },
+  {
+    path: 'serviceWithPromise',
+    component: ServiceWithPromiseComponent
   },
   {
     path: '**',
