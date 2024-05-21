@@ -15,5 +15,9 @@ export const itemsTabsServices: ItemsTabs[] = [
     {
         name: 'Service with Promise',
         path: 'serviceWithPromise'
+    },
+    {
+        name: 'List Writers',
+        path: 'listWriters'
     }
 ]
