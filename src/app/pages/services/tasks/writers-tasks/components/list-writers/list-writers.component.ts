@@ -27,7 +27,7 @@ export class ListWritersComponent implements OnInit {
     if( $event.target.value === 'todos' ) {
       this.listWriters = await this._writersService.writersPromise;
     } else {
-      this.listWriters = await this._writersService.getselectByCountry($event.target.value);
+      this.listWriters = await this._writersService.getSelectByCountry($event.target.value);
     }
   }
 

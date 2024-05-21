@@ -27,7 +27,7 @@
             <div class="card-body">
               <h5 class="card-title">{{ writer.nombre }} {{ writer.apellidos }}</h5>
               <p>{{ writer.pais }}</p>
-              <a href="#" class="btn btn-outline-primary w-100">Ir al escritor</a>
+              <a [routerLink]="[writer.id]" class="btn btn-outline-primary w-100">Ir al escritor</a>
             </div>
         </div>
     </div>

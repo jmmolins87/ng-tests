@@ -21,13 +21,22 @@ export class WritersService {
     });
   }
 
-  getselectByCountry(cPais: string): Promise<Escritor[]> {
+  getSelectByCountry(cPais: string): Promise<Escritor[]> {
     return new Promise((resolve, reject) => {
       const arrFiltrado = ESCRITORES.filter( escritor => {
         return escritor.pais === cPais;
       })
       resolve(arrFiltrado);
     });
+  }
+
+  getById(id: number): Promise<Escritor> {
+    return new Promise((resolve, reject) => {
+      const escritor = ESCRITORES.find( escritor => {
+        return escritor.id === id;
+      });
+      resolve(escritor);
+    })
   }
 
 }

@@ -1,1 +1,16 @@
-<p>list-books works!</p>
+
+
+
+<div class="row">
+    <div *ngFor="let book of books" class="col-3">
+        <div class="card" style="width: 18rem;">
+            <img 
+                [src]="book.imagen" 
+                [alt]="book.titulo"
+                [title]="book.titulo">
+            <div class="card-body">
+              <h5 class="card-title">{{ book.titulo }}</h5>
+            </div>
+        </div>
+    </div>
+</div>
