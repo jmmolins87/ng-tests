@@ -6,13 +6,15 @@ import { TaskWritersRoutingModule } from './task-writers-routing.module';
 import { PlaygroundTaskWritersComponent } from './playground-task-writers.component';
 import { ListWritersComponent } from './components/list-writers/list-writers.component';
 import { WritersDetailComponent } from './components/writers-detail/writers-detail.component';
+import { ListBooksComponent } from './components/list-books/list-books.component';
 
 
 @NgModule({
   declarations: [
     PlaygroundTaskWritersComponent,
     ListWritersComponent,
-    WritersDetailComponent
+    WritersDetailComponent,
+    ListBooksComponent
   ],
   imports: [
     CommonModule,

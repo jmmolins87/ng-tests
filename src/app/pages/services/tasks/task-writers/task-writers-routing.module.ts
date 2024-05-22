@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { ListWritersComponent } from './components/list-writers/list-writers.component';
 import { WritersDetailComponent } from './components/writers-detail/writers-detail.component';
+import { ListBooksComponent } from './components/list-books/list-books.component';
 
 const routes: Routes = [
   {
@@ -16,7 +17,13 @@ const routes: Routes = [
   },
   {
     path: 'list-writers/:id',
-    component: WritersDetailComponent
+    component: WritersDetailComponent,
+    children: [
+      {
+        path: 'books',
+        component: ListBooksComponent
+      }
+    ]
   },
   {
     path: '**',

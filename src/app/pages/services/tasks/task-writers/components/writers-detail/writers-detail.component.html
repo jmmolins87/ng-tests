@@ -1,7 +1,7 @@
 
 
 <div class="row">
-    <div class="col-3">
+    <div class="col-5">
         <div class="card" style="width: 18rem;">
             <img 
                 [src]="writer?.imagen"
@@ -13,5 +13,8 @@
               <p class="card-text">País: {{ writer?.pais }}</p>
             </div>
         </div>
+    </div>
+    <div class="col-7">
+        <router-outlet />
     </div>
 </div>
