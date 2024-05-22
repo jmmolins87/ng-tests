@@ -2,28 +2,21 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { ListWritersComponent } from './components/list-writers/list-writers.component';
-import { WriterDetailComponent } from './components/writer-detail/writer-detail.component';
-import { ListBooksComponent } from './components/list-books/list-books.component';
+import { WritersDetailComponent } from './components/writers-detail/writers-detail.component';
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'listWriters',
+    redirectTo: 'list-writers',
     pathMatch: 'full'
   },
   {
-    path: 'listWriters',
+    path: 'list-writers',
     component: ListWritersComponent
   },
   {
-    path: 'listWriters/:id',
-    component: WriterDetailComponent,
-    children: [
-      {
-        path: 'books',
-        component: ListBooksComponent
-      }
-    ]
+    path: 'list-writers/:id',
+    component: WritersDetailComponent
   },
   {
     path: '**',
@@ -35,4 +28,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class WritersTasksRoutingModule { }
+export class TaskWritersRoutingModule { }

@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { ServicesRoutingModule } from './services-routing.module';
 import { SharedModule } from './../../shared/shared.module';
+import { TaskWritersModule } from './tasks/task-writers/task-writers.module';
 
 import { PlaygroundServicesComponent } from './playground-services.component';
 import { PeopleServiceComponent } from './components/people-service/people-service.component';
@@ -20,7 +21,8 @@ import { ServiceWithPromiseComponent } from './components/service-with-promise/s
   imports: [
     CommonModule,
     ServicesRoutingModule,
-    SharedModule
+    SharedModule,
+    TaskWritersModule
   ],
   exports: [
     PlaygroundServicesComponent

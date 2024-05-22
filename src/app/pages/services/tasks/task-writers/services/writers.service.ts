@@ -11,32 +11,32 @@ export class WritersService {
 
   constructor() { }
 
-  get writers(): Escritor[] {
+  get lsitWriters(): Escritor[] {
     return ESCRITORES;
   }
 
-  get writersPromise(): Promise<Escritor[]> {
-    return new Promise((resolve, reject) => {
-      resolve(ESCRITORES);
-    });
+  getListWritersPromise(): Promise<Escritor[]> {
+    return new Promise(( resolve, reject ) => {
+      resolve( ESCRITORES );
+    })
   }
 
-  getSelectByCountry(cPais: string): Promise<Escritor[]> {
-    return new Promise((resolve, reject) => {
-      const arrFiltrado = ESCRITORES.filter( escritor => {
+  getbyCountry( cPais: string ): Promise<Escritor[]> {
+    return new Promise( (resolve, reject) => {
+      const escritores = ESCRITORES.filter( escritor => {
         return escritor.pais === cPais;
       })
-      resolve(arrFiltrado);
+      resolve( escritores );
     });
   }
 
-  getById(id: number): Promise<Escritor> {
+  getById(id): Promise<Escritor> {
     return new Promise((resolve, reject) => {
       const escritor = ESCRITORES.find( escritor => {
         return escritor.id === id;
       });
-      resolve(escritor);
-    })
+      resolve( escritor );
+    });
   }
-
+  
 }

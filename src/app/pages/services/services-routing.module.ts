@@ -4,7 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { PeopleServiceComponent } from './components/people-service/people-service.component';
 import { ListServiceComponent } from './components/list-service/list-service.component';
 import { ServiceWithPromiseComponent } from './components/service-with-promise/service-with-promise.component';
-import { PlaygroundWritersComponent } from './tasks/writers-tasks/playground-writers.component';
+import { PlaygroundTaskWritersComponent } from './tasks/task-writers/playground-task-writers.component';
 
 const routes: Routes = [
   {
@@ -26,8 +26,8 @@ const routes: Routes = [
   },
   {
     path: 'listWriters',
-    component: PlaygroundWritersComponent,
-    loadChildren: () => import('./tasks/writers-tasks/writers-tasks.module').then(m => m.WritersTasksModule)
+    component: PlaygroundTaskWritersComponent,
+    loadChildren: () => import('./tasks/task-writers/task-writers.module').then( m => m.TaskWritersModule )
   },
   {
     path: '**',

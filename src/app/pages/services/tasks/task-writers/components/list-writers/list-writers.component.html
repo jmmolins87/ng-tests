@@ -2,16 +2,13 @@
 
 <div class="row">
     <div class="col-12">
-        <select 
-            (change)="onSelectCountry($event)"
-            class="form-select" 
-            aria-label="Default select example">
+        <select (change)="selectCountry($event)" class="form-select" aria-label="Default select example">
             <option selected>Selecciona un país</option>
             <option value="todos">Todos</option>
-            <option value="españa">España</option>
             <option value="canadá">Canadá</option>
-            <option value="chile">Chile</option>
             <option value="reino unido">Reino Unido</option>
+            <option value="españa">España</option>
+            <option value="chile">Chile</option>
         </select>
     </div>
 </div>
@@ -26,7 +23,7 @@
                 class="card-img-top">
             <div class="card-body">
               <h5 class="card-title">{{ writer.nombre }} {{ writer.apellidos }}</h5>
-              <p>{{ writer.pais }}</p>
+              <p class="card-text">País: {{ writer.pais }}</p>
               <a [routerLink]="[writer.id]" class="btn btn-outline-primary w-100">Ir al escritor</a>
             </div>
         </div>

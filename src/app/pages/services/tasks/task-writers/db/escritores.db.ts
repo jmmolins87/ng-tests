@@ -1,4 +1,4 @@
-import { Escritor } from '../models/escritor.model';
+import { Escritor } from './../models/escritor.model';
 
 export const ESCRITORES: Escritor[] = [
     {
