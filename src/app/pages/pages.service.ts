@@ -4,6 +4,7 @@ import { itemsTabsComponents } from './components/db/itemsTabsComponents.db';
 import { itemsTabsDirectives } from './directives/db/itemsTabsDirectives.db';
 import { itemsTabsRouting } from './routing/db/itemsTabsRouting.db';
 import { itemsTabsServices } from './services/db/itemsTabsServices.db';
+import { itemsTabsForms } from './forms/db/itemsTabsForms.db';
 
 @Injectable({
   providedIn: 'root'
@@ -27,4 +28,9 @@ export class PagesService {
   get itemsTabsService() {
     return itemsTabsServices;
   }
+
+  get itemsTabsForm() {
+    return itemsTabsForms;
+  }
+
 }

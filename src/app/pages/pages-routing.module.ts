@@ -36,7 +36,8 @@ const routes: Routes = [
   },
   {
     path: 'forms',
-    component: PlaygroundFormsComponent
+    component: PlaygroundFormsComponent,
+    loadChildren: () => import('./forms/forms.module').then( m => m.MyFormsModule )
   },
   {
     path: 'http',

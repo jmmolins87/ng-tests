@@ -1,0 +1,60 @@
+
+
+
+
+<form #formRegister="ngForm" (ngSubmit)="onSubmit(formRegister.value)">
+    <div class="row">
+        <div class="col-12 mt-2 col-md-6 mt-md-0">
+            <div class="form-group">
+                <label class="form-label">Nombre</label>
+                <input
+                    ngModel 
+                    type="text" 
+                    class="form-control" 
+                    name="nombre"
+                    aria-describedby="Name Help">
+            </div>
+        </div>
+        <div class="col-12 mt-2 col-md-6 mt-md-0">
+            <div class="form-group">
+                <label class="form-label">Apellidos</label>
+                <input
+                    ngModel 
+                    type="text" 
+                    class="form-control" 
+                    name="apellidos"
+                    aria-describedby="Surname Help">
+            </div>
+        </div>
+    </div>
+    <div class="row mt-0 mt-md-2">
+        <div class="col-12 mt-2 col-md-6 mt-md-0">
+            <div class="form-group">
+                <label class="form-label">Edad</label>
+                <input
+                    ngModel 
+                    type="text" 
+                    class="form-control" 
+                    name="edad"
+                    aria-describedby="Age Help">
+            </div>
+        </div>
+        <div class="col-12 mt-2 col-md-6 mt-md-0">
+            <div class="form-group">
+                <label class="form-label">Dirección</label>
+                <input
+                    ngModel 
+                    type="text" 
+                    class="form-control" 
+                    name="direccion"
+                    aria-describedby="Direction Help">
+            </div>
+        </div>
+    </div>
+    <div class="d-flex justify-content-end mt-3">
+        <button type="submit" class="btn btn-outline-primary w-25">Enviar</button>
+    </div>
+</form>
+
+
+<code>{{ formRegister.value | json }}</code>

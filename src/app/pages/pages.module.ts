@@ -6,6 +6,7 @@ import { PagesRoutingModule } from './pages-routing.module';
 import { ComponentsModule } from './components/components.module';
 import { DirectivesModule } from './directives/directives.module';
 import { RoutingModule } from './routing/routing.module';
+import { MyFormsModule } from './forms/forms.module';
 
 @NgModule({
   declarations: [],
@@ -14,7 +15,8 @@ import { RoutingModule } from './routing/routing.module';
     PagesRoutingModule,
     ComponentsModule,
     DirectivesModule,
-    RoutingModule
+    RoutingModule,
+    MyFormsModule
   ]
 })
 export class PagesModule { }

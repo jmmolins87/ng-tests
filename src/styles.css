@@ -6,7 +6,13 @@
     --bg-scrollbar-track: #c5d9f6;
     --bg-scrollbar-thumb: #92b8f2;
     --bg-scrollbar-thumb-hover: #0d6efd;
+    --bg-success: #eff6f0;
+    --bg-danger: #f8ebed
     --border-list: #b4b2b2;
+    --border-success: #28a745;
+    --border-danger: #dc3545;
+    --text-success: #28a745;
+    --text-danger: #dc3545;
 }
 
 /* *** Custom Global Scroll bar */
