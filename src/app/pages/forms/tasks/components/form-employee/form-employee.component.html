@@ -1,0 +1,142 @@
+
+
+<div class="row">
+    <div class="col-12">
+        <h2 class="mt-3">Registro de empleados</h2>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+            <div class="row">
+                <div class="col-12 mt-3 col-md-4">
+                    <div>
+                        <label class="form-label">Nombre</label>
+                        <input
+                            formControlName="name" 
+                            type="text" 
+                            class="form-control" 
+                            aria-describedby="Nombre">
+                        <div class="error mt-1">
+                            <span *ngIf="myForm.controls['name'].errors?.['required'] && myForm.controls['name'].touched" >
+                                Este campo es obligatorio
+                            </span>
+                            <span *ngIf="myForm.controls['name'].errors?.['minlength'] && myForm.controls['name'].touched" >
+                                Debe tener como mínimo {{ myForm.controls['name'].errors?.['minlength'].requiredLength }} carácteres
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 mt-3 col-md-4">
+                    <div>
+                        <label class="form-label">Apellidos</label>
+                        <input
+                            formControlName="lastNames" 
+                            type="text" 
+                            class="form-control" 
+                            aria-describedby="Apellidos">
+                        <div class="error mt-1">
+                            <span *ngIf="myForm.controls['lastNames'].errors?.['required'] && myForm.controls['lastNames'].touched" >
+                                Este campo es obligatorio
+                            </span>
+                            <span *ngIf="myForm.controls['lastNames'].errors?.['minlength'] && myForm.controls['lastNames'].touched" >
+                                Debe tener como mínimo {{ myForm.controls['lastNames'].errors?.['minlength'].requiredLength }} carácteres
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 mt-3 col-md-4">
+                    <div>
+                        <label class="form-label">Email</label>
+                        <input
+                            formControlName="email" 
+                            type="email" 
+                            class="form-control" 
+                            aria-describedby="Email">
+                        <div class="error mt-1">
+                            <span *ngIf="myForm.controls['email'].errors?.['required'] && myForm.controls['email'].touched" >
+                                Este campo es obligatorio
+                            </span>
+                            <span *ngIf="myForm.controls['email'].errors?.['pattern'] && myForm.controls['email'].touched" >
+                                El email no es válido
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 mt-3 col-md-4">
+                    <div>
+                        <label class="form-label">Edad</label>
+                        <input
+                            formControlName="age" 
+                            type="text" 
+                            class="form-control" 
+                            aria-describedby="Edad">
+                        <div class="error mt-1">
+                            <span *ngIf="myForm.controls['age'].errors?.['required'] && myForm.controls['age'].touched" >
+                                Este campo es obligatorio
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 mt-3 col-md-4">
+                    <div>
+                        <label class="form-label">Departamento</label>
+                        <select 
+                            formControlName="department" 
+                            class="form-select" 
+                            aria-label="Departamento">
+                            <option selected>Seleccione un departamento</option>
+                            <option *ngFor="let department of itemsDepartments" value="{{ department.value }}">{{ department.name }}</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-12 mt-3 col-md-4">
+                    <div>
+                        <label class="form-label">Contraseña</label>
+                        <input
+                            formControlName="pass" 
+                            type="password" 
+                            class="form-control" 
+                            aria-describedby="Contraseña">
+                        <div class="error mt-1">
+                            <span *ngIf="myForm.controls['pass'].errors?.['required'] && myForm.controls['pass'].touched" >
+                                Este campo es obligatorio
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 mt-3">
+                    <div>
+                        <label class="form-label">Imagen</label>
+                        <input
+                            formControlName="img" 
+                            type="text" 
+                            class="form-control" 
+                            aria-describedby="Imagen">
+                        <div class="error mt-1">
+                            <span *ngIf="myForm.controls['img'].errors?.['required'] && myForm.controls['img'].touched" >
+                                Este campo es obligatorio
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-end mt-3">
+                <button 
+                    [disabled]="!myForm.valid"
+                    type="submit" 
+                    [ngClass]="myForm.valid ? 'btn-outline-primary' : 'btn-outline-danger'"
+                    class="btn w-25">
+                    Enviar
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<hr>
+<code>{{ myForm.value | json }}</code>

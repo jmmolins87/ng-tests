@@ -13,5 +13,9 @@ export const itemsTabsForms: ItemsTabs[] = [
     {
         name: 'Model Form',
         path: 'model'
+    },
+    {
+        name: 'Task Employees',
+        path: 'taskEmployees'
     }
 ]

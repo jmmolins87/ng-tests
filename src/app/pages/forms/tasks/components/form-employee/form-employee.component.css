@@ -1,0 +1,16 @@
+
+
+
+input.ng-valid.ng-touched {
+    border: 2px solid var(--border-success, #28a745);
+    background: var(--bg-success, #eff6f0);
+    color: var(--text-success, #28a745);
+}	
+input.ng-invalid.ng-touched {
+    border: 2px solid var(--border-danger, #dc3545);
+    background: var(--bg-danger, #f8ebed);
+    color: var(--text-danger, #dc3545);
+}
+.error {
+    color: var(--text-danger, #dc3545);
+}

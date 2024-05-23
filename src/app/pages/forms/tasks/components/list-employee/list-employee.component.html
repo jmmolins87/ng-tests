@@ -1,0 +1,25 @@
+
+
+<div *ngIf="listEmployees.length === 0" class="row">
+    <div class="col-12">
+        <div class="alert alert-danger mt-3">No hay ningún empleado que mostarar</div>
+    </div>
+</div>
+
+
+<div *ngIf="listEmployees.length >= 1" class="row">
+    <div *ngFor="let employee of listEmployees" class="col-3">
+        <div class="card mt-3">
+            <img [src]="employee.img" 
+            [alt]="employee.name"
+            [title]="employee.name"
+            class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">{{ employee.name }} {{ employee.lastNames }}</h5>
+                <p class="card-text">Correo: {{ employee.email }}</p>
+                <p class="card-text">Departamento: {{ employee.department }}</p>
+                <p class="card-text">Contraseña: {{ employee.pass }}</p>
+            </div>
+        </div>
+    </div>
+</div>

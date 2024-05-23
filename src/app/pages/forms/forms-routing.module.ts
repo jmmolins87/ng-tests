@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { TemplateComponent } from './components/template/template.component';
 import { ModelComponent } from './components/model/model.component';
+import { PlaygroundTaskEmployeesComponent } from './tasks/playground-task-employees.component';
 
 const routes: Routes = [
   {
@@ -17,6 +18,11 @@ const routes: Routes = [
   {
     path: 'model',
     component: ModelComponent
+  },
+  {
+    path: 'taskEmployees',
+    component: PlaygroundTaskEmployeesComponent,
+    loadChildren: () => import('./tasks/task-employees.module').then( m => m.TaskEmployeesModule )
   },
   {
     path: '**',
