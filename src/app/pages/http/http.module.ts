@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { HttpRoutingModule } from './http-routing.module';
+import { SharedModule } from './../../shared/shared.module';
+
 import { PlaygroundHttpComponent } from './playground-http.component';
 
 
@@ -11,7 +13,11 @@ import { PlaygroundHttpComponent } from './playground-http.component';
   ],
   imports: [
     CommonModule,
-    HttpRoutingModule
+    HttpRoutingModule,
+    SharedModule
+  ],
+  exports: [
+    PlaygroundHttpComponent
   ]
 })
 export class HttpModule { }

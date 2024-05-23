@@ -26,6 +26,9 @@ import { PlaygroundTaskEmployeesComponent } from './tasks/playground-task-employ
     ReactiveFormsModule,
     SharedModule,
     TaskEmployeesModule
+  ],
+  exports: [
+    PlaygroundFormsComponent
   ]
 })
 export class MyFormsModule { }
