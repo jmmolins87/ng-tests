@@ -46,7 +46,8 @@ const routes: Routes = [
   },
   {
     path: 'pipes',
-    component: PlaygroundPipesComponent
+    component: PlaygroundPipesComponent,
+    loadChildren: () => import('./pipes/pipes.module').then( m => m.PipesModule )
   },
   {
     path: 'animations',

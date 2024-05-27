@@ -6,6 +6,8 @@ import { itemsTabsRouting } from './routing/db/itemsTabsRouting.db';
 import { itemsTabsServices } from './services/db/itemsTabsServices.db';
 import { itemsTabsForms } from './forms/db/itemsTabsForms.db';
 import { itemsTabsHttp } from './http/db/itemsTabsHttp.db';
+import { itemsTabsPipes } from './pipes/db/itemsTabsPipes.db';
+
 
 @Injectable({
   providedIn: 'root'
@@ -36,6 +38,10 @@ export class PagesService {
 
   get itemsTabsHttp() {
     return itemsTabsHttp;
+  }
+
+  get itemsTabsPipes() {
+    return itemsTabsPipes;
   }
 
 }

@@ -8,6 +8,7 @@ import { DirectivesModule } from './directives/directives.module';
 import { RoutingModule } from './routing/routing.module';
 import { MyFormsModule } from './forms/forms.module';
 import { HttpModule } from './http/http.module';
+import { PipesModule } from './pipes/pipes.module';
 
 @NgModule({
   declarations: [],
@@ -18,7 +19,8 @@ import { HttpModule } from './http/http.module';
     DirectivesModule,
     RoutingModule,
     MyFormsModule,
-    HttpModule
+    HttpModule,
+    PipesModule
   ]
 })
 export class PagesModule { }

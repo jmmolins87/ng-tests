@@ -1,0 +1,9 @@
+
+
+
+
+<h3>Mensaje desde una promesa: {{ prom | async }}</h3>
+<h3>Mensaje desde una promesa desde un servicio:</h3>
+<ul class="list-group">
+    <li *ngFor="let post of promToServe | async" class="list-group-item">{{ post.title }}</li>
+</ul>
