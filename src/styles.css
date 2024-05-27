@@ -13,6 +13,9 @@
     --border-danger: #dc3545;
     --text-success: #28a745;
     --text-danger: #dc3545;
+    --bg-danger: #dc3545;
+    --bg-warning: #ffff00;
+    --bg-success: #28a745;
 }
 
 /* *** Custom Global Scroll bar */

@@ -7,6 +7,7 @@ import { itemsTabsServices } from './services/db/itemsTabsServices.db';
 import { itemsTabsForms } from './forms/db/itemsTabsForms.db';
 import { itemsTabsHttp } from './http/db/itemsTabsHttp.db';
 import { itemsTabsPipes } from './pipes/db/itemsTabsPipes.db';
+import { itemsTabsAnimations } from './animations/db/itemsTabsAnimations.db';
 
 
 @Injectable({
@@ -42,6 +43,10 @@ export class PagesService {
 
   get itemsTabsPipes() {
     return itemsTabsPipes;
+  }
+
+  get itemsTabsAnimations() {
+    return itemsTabsAnimations;
   }
 
 }

@@ -9,6 +9,7 @@ import { RoutingModule } from './routing/routing.module';
 import { MyFormsModule } from './forms/forms.module';
 import { HttpModule } from './http/http.module';
 import { PipesModule } from './pipes/pipes.module';
+import { AnimationsModule } from './animations/animations.module';
 
 @NgModule({
   declarations: [],
@@ -20,7 +21,8 @@ import { PipesModule } from './pipes/pipes.module';
     RoutingModule,
     MyFormsModule,
     HttpModule,
-    PipesModule
+    PipesModule,
+    AnimationsModule
   ]
 })
 export class PagesModule { }

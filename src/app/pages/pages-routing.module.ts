@@ -51,7 +51,8 @@ const routes: Routes = [
   },
   {
     path: 'animations',
-    component: PlaygroundAnimationsComponent
+    component: PlaygroundAnimationsComponent,
+    loadChildren: () => import('./animations/animations.module').then( m => m.AnimationsModule )
   },
   {
     path: 'maps',
