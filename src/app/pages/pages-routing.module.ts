@@ -41,7 +41,8 @@ const routes: Routes = [
   },
   {
     path: 'http',
-    component: PlaygroundHttpComponent
+    component: PlaygroundHttpComponent,
+    loadChildren: () => import('./http/http.module').then( m => m.HttpModule )
   },
   {
     path: 'pipes',

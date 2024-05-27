@@ -1,0 +1,47 @@
+
+
+
+
+<div class="row">
+    <div class="col-12">
+        <h3>Número de páginas: {{ numPages }}</h3>
+        <h3>Página actual: {{ currentPage }}</h3>
+    </div>
+    <div class="col-2">
+        <button 
+            (click)="changePage(false)" 
+            [disabled]="currentPage === 1"
+            class="btn btn-outline-danger w-100">
+            Anterior
+        </button>
+    </div>
+    <div class="col-2">
+        <button 
+            (click)="changePage(true)" 
+            [disabled]="currentPage === numPages"
+            class="btn btn-outline-success w-100">
+            Siguiente
+        </button>
+    </div>
+</div>
+<div class="row">
+    <div *ngFor="let character of characters" class="col-4">
+        <div [ngClass]="character.status === 'Alive' ? 'alive' : 'dead'" class="card mt-3">
+            <img 
+                [src]="character.image" 
+                [alt]="character.name" 
+                [title]="character.name" 
+                class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">{{ character.name }}</h5>
+                <p class="card-text">Especie: {{ character.species }}</p>
+                <p class="card-text wrap-status">Está vivo?: 
+                    <span 
+                        [ngClass]="character.status === 'Alive' ? 'alive' : 'dead'" 
+                        class="status">
+                    </span>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

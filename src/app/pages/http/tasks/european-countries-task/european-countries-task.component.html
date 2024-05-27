@@ -1,0 +1,24 @@
+
+
+
+<div class="row">
+    <div *ngFor="let country of countries" class="col-3">
+        <div class="card mt-3">
+            <img 
+                [src]="country.flags.png" 
+                [alt]="country.name.common"
+                [title]="country.name.common"
+                class="card-img-top">
+            <div class="card-body">
+                <h3 class="card-title">{{ country.name.common }}</h3>
+                <h5 class="card-title">Capital: <strong>{{ country.capital }}</strong></h5>
+                <ul class="list-group">
+                    <li class="list-group-item quarter">Área: {{ country.area }} <span class="quarter-span">2</span></li>
+                    <li class="list-group-item">Población: {{ country.population | number }}</li>
+                    <li class="list-group-item">Fronteras: {{ country.borders }}</li>
+                    <li class="list-group-item">Continente: {{ country.continents }}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

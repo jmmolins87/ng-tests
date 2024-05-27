@@ -1,0 +1,31 @@
+
+
+.alive {
+    border: 3px solid var(--border-success, #28a745);
+}
+.dead {
+    border: 3px solid var(--border-danger, #dc3545); 
+}
+.card-text.wrap-status {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: flex-start;
+    align-items: center;
+}
+.status {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 5px;
+}
+.status.alive {
+    background-color: var(--bg-success, #28a745);
+}
+.status.dead {
+    background-color: var(--bg-danger, #dc3545);
+}
+.card-text.alive-text {
+    display: flex;
+    align-items: center;
+}

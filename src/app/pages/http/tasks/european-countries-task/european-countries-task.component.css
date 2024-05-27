@@ -1,0 +1,13 @@
+
+
+.card-img-top {
+    height: 150px;
+}
+.list-group-item.quarter {
+    position: relative;
+}
+.list-group-item.quarter .quarter-span {
+    position: absolute;
+    top: 7px;
+    font-size: 10px;
+}
