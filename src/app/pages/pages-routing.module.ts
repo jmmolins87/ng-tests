@@ -61,7 +61,8 @@ const routes: Routes = [
   },
   {
     path: 'testing',
-    component: PlaygroundTestingComponent
+    component: PlaygroundTestingComponent,
+    loadChildren: () => import('./testing/testing.module').then( m => m.TestingModule )
   },
   {
     path: '',

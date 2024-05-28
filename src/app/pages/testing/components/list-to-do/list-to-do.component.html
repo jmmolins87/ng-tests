@@ -1,0 +1,19 @@
+
+
+<div class="row">
+    <div class="col-12">
+        <h2>{{ title }}</h2>
+    </div>
+</div>
+<div class="row">
+    <div *ngIf="toDoS.length > 1" class="col-12">
+        <ng-container *ngFor="let toDo of toDoS">
+            <app-card-to-do [toDo]="toDo"></app-card-to-do>
+        </ng-container>
+    </div>
+    <div class="col-12">
+        <div class="alert alert-danger">
+            <span>No hay tareas que mostrar</span>
+        </div>
+    </div>
+</div>
