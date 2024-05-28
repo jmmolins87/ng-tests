@@ -10,6 +10,7 @@ import { MyFormsModule } from './forms/forms.module';
 import { HttpModule } from './http/http.module';
 import { PipesModule } from './pipes/pipes.module';
 import { AnimationsModule } from './animations/animations.module';
+import { MapsModule } from './maps/maps.module';
 
 @NgModule({
   declarations: [],
@@ -22,7 +23,8 @@ import { AnimationsModule } from './animations/animations.module';
     MyFormsModule,
     HttpModule,
     PipesModule,
-    AnimationsModule
+    AnimationsModule,
+    MapsModule
   ]
 })
 export class PagesModule { }

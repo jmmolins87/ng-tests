@@ -56,7 +56,8 @@ const routes: Routes = [
   },
   {
     path: 'maps',
-    component: PlaygroundMapsComponent
+    component: PlaygroundMapsComponent,
+    loadChildren: () => import('./maps/maps.module').then( m => m.MapsModule )
   },
   {
     path: 'testing',

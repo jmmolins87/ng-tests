@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ng-tests';
+  
+  public apiKeyMap: string = 'AIzaSyAAMQcGKo55-H4X2p4r_Qw9Qnq59Yq8MtA';
+
 }

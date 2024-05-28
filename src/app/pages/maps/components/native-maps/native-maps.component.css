@@ -1,0 +1,26 @@
+
+.btn-fix-delete,
+.btn-fix-route {
+    position: fixed;
+    left: 100px;
+    z-index: 1;
+    width: 160px;
+}
+.btn-fix-delete {
+    bottom: 50px;
+}
+.btn-fix-route {
+    bottom: 100px;
+}
+.input-autocomplete {
+    position: fixed;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    width: 300px;
+}
+.map {
+    width: 100%;
+    height: 100%;
+}
